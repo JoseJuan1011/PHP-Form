@@ -1,0 +1,23 @@
+html {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+form {
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0.5em 0.5em 0.5em;
+    margin: 2px;
+}
+
+li  {
+    margin: 5px;
+}
