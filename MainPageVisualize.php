@@ -1,19 +1,22 @@
 <?php
+    include "Connectiondb.php";
     function Visualize_Table_Habitaciones() {
-        $servername = "localhost";
-        $dbn = "mysql:host=$servername;dbname=bdHoteles";
-        $username = "username";
-        $password = "password";
+        $pdo = Connect_db();
 
-        try {
-            $conn = new PDO($dbn, $username, $password);
-
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "Connected successfully";
+        $stmt = $pdo -> prepare("select * from habitaciones");
+        
+        while ($row = $stmt->fetch()) {
+            echo "<tr>";
+                echo "<td>".$row['codHotel']."</td>";
+                echo "<td>".$row['numHabitacion']."</td>";
+                echo "<td>".$row['capacidad']."</td>";
+                echo "<td>".$row['preciodia']."</td>";
+                echo "<td>".$row['activa']."</td>";
+                echo "<td>".'<input value="modificar" type="submit" formaction="ModificarPage.html"/>'."</td>";
+                echo "<td>".'<input value="eliminar" type="submit" formaction="EliminarPage.html"/>'."</td>";
+            echo "</tr>";
         }
 
-        catch (PDOException $e) {
-            echo "Connection failed: ".$e->getMessage();
-        }
+        $pdo = null;
     }
 ?>

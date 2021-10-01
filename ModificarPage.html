@@ -9,10 +9,20 @@
     </head>
     <body>
         <h1>Modificar Registro</h1>
-        <form action="MainPage.html" method="post">
+        <form action="MainPage.html" id="ModificarForm" method="post">
             <ul>
                 <li>
-                    codHotel <input type="number" placeholder="Escribalo aquí"/>
+                    <select name="codHotel" form="ModificarForm">
+                        <option value="hotel H10 Puerto" selected>
+                            hotel H10 Puerto
+                        </option>
+                        <option value="RIU Palmeras">
+                            RIU Palmeras
+                        </option>
+                        <option value="Abama">
+                            Abama
+                        </option>
+                    </select>
                 </li>
                 <li>
                     numhabitacion <input type="number" placeholder="Escribalo aquí"/>
@@ -27,7 +37,9 @@
                     activa <input type="checkbox"/>
                 </li>
             </ul>
-            <input type="submit" value="Volver a la página principal">
+            <input type="submit" value="Modificar registro" formaction="ModificarPage.php" />
+            
+            <input type="submit" value="Volver a la página principal" />
         </form>
     </body>
 </html>
