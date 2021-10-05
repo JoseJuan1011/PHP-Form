@@ -21,3 +21,7 @@ ul {
 li  {
     margin: 5px;
 }
+
+option:empty {
+    display: none;
+}

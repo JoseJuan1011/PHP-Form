@@ -26,33 +26,8 @@
                 </tr>
             </thead>
             <tbody>
-                <!--
-                        <tr>
-                        <td>
-                            222222
-                        </td>
-                        <td>
-                            4
-                        </td>
-                        <td>
-                            3
-                        </td>
-                        <td>
-                            60
-                        </td>
-                        <td>
-                            1
-                        </td>
-                        <td>
-                            <input value="modificar" type="submit" formaction="ModificarPage.html"/>
-                        </td>
-                        <td>
-                            <input value="eliminar" type="submit" formaction="EliminarPage.html"/>
-                        </td>
-                    </tr>
-                -->
                 <?php
-                    include("MainPageVisualize.php");
+                    include "mainPageVisualize.php";
                     Visualize_Table_Habitaciones();
                 ?>
             </tbody>

@@ -17,4 +17,19 @@
             echo "Connection failed: ".$e->getMessage();
         }
     }
+
+    function select_codHotel($form) {
+        $pdo = Connect_db();
+
+        $stmt = $pdo->prepare("SELECT codHotel from hoteles");
+        $stmt->execute();
+
+        echo '<select name="codHotel" form="'.$form.'">';
+        while ($row = $stmt->fetch()) {
+                echo '<option value="'.$row['codHotel'].'">'.$row['codHotel'].'<option/>';
+        }
+        echo '<select/>';
+
+        $pdo = null;
+    }
 ?>
