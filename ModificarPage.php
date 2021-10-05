@@ -22,10 +22,10 @@
                 ?>
             </li>
             <li>
-                numhabitacion <input type="number" name="numhabitacion" placeholder="Escribalo aquí" />
+                numhabitacion <input type="number" name="numhabitacion" placeholder="Escribalo aquí" min="1"/>
             </li>
             <li>
-                capacidad <input type="number" name="capacidad" placeholder="Escribalo aquí" />
+                capacidad <input type="number" name="capacidad" placeholder="Escribalo aquí" min="1"/>
             </li>
             <li>
                 preciodia <input type="number" name="preciodia" placeholder="Escribalo aquí" min="1" />

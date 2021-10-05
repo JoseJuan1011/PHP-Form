@@ -26,7 +26,10 @@
 
         echo '<select name="codHotel" form="'.$form.'">';
         while ($row = $stmt->fetch()) {
-                echo '<option value="'.$row['codHotel'].'">'.$row['codHotel'].'<option/>';
+                $option = '<option value="'.$row['codHotel'].'">'.$row['codHotel'].'<option/>';
+                if ($option != '<option></option>') {
+                    echo $option;
+                }
         }
         echo '<select/>';
 
