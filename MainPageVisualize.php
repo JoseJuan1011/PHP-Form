@@ -17,7 +17,7 @@
                 ."<td>".$row['preciodia']."</td> \n"
                 ."<td>".$row['activa']."</td> \n"
                 ."<td>".'<input value="modificar" type="submit" formaction="ModificarPage.php"/>'."</td> \n"
-                ."<td>".'<input value="eliminar" type="submit" formaction="EliminarPage.html"/>'."</td> \n"
+                ."<td>".'<input value="eliminar" type="submit" formaction="EliminarPage.php"/>'."</td> \n"
             ."</tr> \n";
         }
 
