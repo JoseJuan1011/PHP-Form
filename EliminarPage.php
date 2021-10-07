@@ -60,7 +60,7 @@
         <input type="hidden" name="numHabitacion" value="<?php echo $_POST['numHabitacion'] ?>" />
         <div id="buttonMenuPrincipal">
             <input type="button" value="Eliminar registro" />
-            <input value="Volver a la página principal" type="button" formaction="MainPage.php" />
+            <input value="Volver a la página principal" type="submit" formaction="MainPage.php"/>
         </div>
     </form>
 </body>

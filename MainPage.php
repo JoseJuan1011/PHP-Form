@@ -12,27 +12,26 @@
 <body>
     <h1>Autor: José Juan</h1>
     <h1>Habitaciones</h1>
-    <form action="InsertarPage.html" method="post">
-        <table>
-            <thead>
-                <tr>
-                    <th>codHotel</th>
-                    <th>numHabitacion</th>
-                    <th>capacidad</th>
-                    <th>preciodia</th>
-                    <th>activa</th>
-                    <th>modificar</th>
-                    <th>eliminar</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                    include "mainPageVisualize.php";
-                    Visualize_Table_Habitaciones();
-                ?>
-            </tbody>
-        </table>
-
+    <table>
+        <thead>
+            <tr>
+                <th>codHotel</th>
+                <th>numHabitacion</th>
+                <th>capacidad</th>
+                <th>preciodia</th>
+                <th>activa</th>
+                <th>modificar</th>
+                <th>eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            include "mainPageVisualize.php";
+            Visualize_Table_Habitaciones();
+            ?>
+        </tbody>
+    </table>
+    <form action="InsertarPage.php" method="POST" >
         <input value="Insertar nuevo registro" type="submit" />
     </form>
 </body>

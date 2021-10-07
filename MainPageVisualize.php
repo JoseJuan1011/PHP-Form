@@ -10,14 +10,16 @@
             echo
             "<tr>"."\n"
                 ."<td>".$row['codHotel']."</td> \n"
-                .'<input type="hidden" name="codHotel" value="'.$row['codHotel'].'" />'
                 ."<td>".$row['numHabitacion']."</td> \n"
-                .'<input type="hidden" name="numHabitacion" value="'.$row['numHabitacion'].'" />'
                 ."<td>".$row['capacidad']."</td> \n"
                 ."<td>".$row['preciodia']."</td> \n"
                 ."<td>".$row['activa']."</td> \n"
+                .'<form action="InsertarPage.php" method="post">'
                 ."<td>".'<input value="modificar" type="submit" formaction="ModificarPage.php"/>'."</td> \n"
                 ."<td>".'<input value="eliminar" type="submit" formaction="EliminarPage.php"/>'."</td> \n"
+                .'<input type="hidden" name="codHotel" value="'.$row['codHotel'].'" />'
+                .'<input type="hidden" name="numHabitacion" value="'.$row['numHabitacion'].'" />'
+                ."</form>"
             ."</tr> \n";
         }
 
