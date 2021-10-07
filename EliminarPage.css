@@ -1,5 +1,18 @@
+html {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 p {
     color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#buttonMenuPrincipal {
+    text-align: center;
 }
 
 table, th, td {
