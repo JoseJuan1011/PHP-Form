@@ -9,6 +9,7 @@
     <title>Modificar Registro</title>
     <?php
     include "Connectiondb.php";
+    $activa = $_POST['activa'];
     ?>
 </head>
 
@@ -25,13 +26,17 @@
                 <input type="hidden" name="numhabitacion" value="<?php echo $_POST['numhabitacion'] ?>" />
             </li>
             <li>
-                capacidad <input type="number" name="capacidad" placeholder="Escribalo aquí" min="1"/>
+                capacidad <input type="number" name="capacidad" placeholder="Escribalo aquí" min="1" />
             </li>
             <li>
                 preciodia <input type="number" name="preciodia" placeholder="Escribalo aquí" min="1" />
             </li>
             <li>
-                activa <input type="checkbox" name="activa"/>
+                activa <input type="checkbox" name="activa" <?php
+                                                                if ($activa == 1) {
+                                                                    echo "checked";
+                                                                }
+                                                            ?>/>
             </li>
         </ul>
         <input type="submit" value="Modificar registro" formaction="ModificarPageAction.php" />

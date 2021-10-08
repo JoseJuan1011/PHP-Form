@@ -19,6 +19,7 @@
                 ."<td>".'<input value="eliminar" type="submit" formaction="EliminarPage.php"/>'."</td> \n"
                 .'<input type="hidden" name="codHotel" value="'.$row['codHotel'].'" />'
                 .'<input type="hidden" name="numhabitacion" value="'.$row['numHabitacion'].'" />'
+                .'<input type="hidden" name="activa" value="'.$row['activa'].'" />'
                 ."</form>"
             ."</tr> \n";
         }
