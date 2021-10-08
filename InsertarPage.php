@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="InsertarPage.css" />
     <title>Insertar Registro</title>
-    <link relsheets="stylesheet" href="InsertarPage.css"/>
     <?php
     include "Connectiondb.php";
     ?>
@@ -31,7 +31,7 @@
                 preciodia <input type="number" name="preciodia" placeholder="Escribalo aquí" min="1" />
             </li>
             <li>
-                activa <input type="checkbox" name="activa" min="0" max="1" />
+                activa <input type="checkbox" name="activa"/>
             </li>
         </ul>
         <input type="submit" value="Insertar registro" formaction="InsertarAction.php" />
