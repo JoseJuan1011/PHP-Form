@@ -18,7 +18,7 @@
                 ."<td>".'<input value="modificar" type="submit" formaction="ModificarPage.php"/>'."</td> \n"
                 ."<td>".'<input value="eliminar" type="submit" formaction="EliminarPage.php"/>'."</td> \n"
                 .'<input type="hidden" name="codHotel" value="'.$row['codHotel'].'" />'
-                .'<input type="hidden" name="numhabitacion" value="'.$row['numHabitacion'].'" />'
+                .'<input type="hidden" name="numHabitacion" value="'.$row['numHabitacion'].'" />'
                 ."</form>"
             ."</tr> \n";
         }

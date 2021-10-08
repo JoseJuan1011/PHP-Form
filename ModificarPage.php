@@ -17,12 +17,12 @@
     <form action="MainPage.php" id="ModificarForm" method="post">
         <ul>
             <li>
-                codHotel <?php echo $_POST['codHotel'] ?>
-                <input type="hidden" name="codHotel" value="<?php echo $_POST['codHotel'] ?>" />
+                <?php
+                select_codHotel("ModificarForm");
+                ?>
             </li>
             <li>
-                numhabitacion <?php echo $_POST['numhabitacion'] ?>
-                <input type="hidden" name="numhabitacion" value="<?php echo $_POST['numhabitacion'] ?>" />
+                numhabitacion <input type="number" name="numhabitacion" placeholder="Escribalo aquí" min="1"/>
             </li>
             <li>
                 capacidad <input type="number" name="capacidad" placeholder="Escribalo aquí" min="1"/>
@@ -31,10 +31,10 @@
                 preciodia <input type="number" name="preciodia" placeholder="Escribalo aquí" min="1" />
             </li>
             <li>
-                activa <input type="checkbox" name="activa"/>
+                activa <input type="checkbox" name="activa" min="0" max="1"/>
             </li>
         </ul>
-        <input type="submit" value="Modificar registro" formaction="ModificarPageAction.php" />
+        <input type="submit" value="Modificar registro" formaction="ModificarPage.php" />
 
         <input type="submit" value="Volver a la página principal" />
     </form>

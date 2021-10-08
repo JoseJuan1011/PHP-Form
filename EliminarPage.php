@@ -22,7 +22,9 @@
         while ($row = $stmt->fetch()) {
             echo '<tr>' . "\n"
                 . "<td>" . $row['codHotel'] . "</td> \n"
+                . '<input type="hidden" name="codHotel" value="' . $row['codHotel'] . '" />'
                 . "<td>" . $row['numHabitacion'] . "</td> \n"
+                . '<input type="hidden" name="numHabitacion" value="' . $row['numHabitacion'] . '" />'
                 . "<td>" . $row['capacidad'] . "</td> \n"
                 . "<td>" . $row['preciodia'] . "</td> \n"
                 . "<td>" . $row['activa'] . "</td> \n"
@@ -55,9 +57,9 @@
     </table>
     <form action="EliminarAction.php" method="POST">
         <input type="hidden" name="codHotel" value="<?php echo $_POST['codHotel'] ?>" />
-        <input type="hidden" name="numhabitacion" value="<?php echo $_POST['numHabitacion'] ?>" />
+        <input type="hidden" name="numHabitacion" value="<?php echo $_POST['numHabitacion'] ?>" />
         <div id="buttonMenuPrincipal">
-            <input type="submit" value="Eliminar registro" />
+            <input type="button" value="Eliminar registro" />
             <input value="Volver a la página principal" type="submit" formaction="MainPage.php"/>
         </div>
     </form>
