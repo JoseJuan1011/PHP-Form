@@ -2,7 +2,10 @@
     include "Connectiondb.php";
 
     $activa=0;
-    if (empty($_POST['activa'])) {
+    if (!empty(isset($_POST['activa']))) {
+        $activa = 1;
+    }
+    else {
         $activa = 0;
     }
 
@@ -16,7 +19,7 @@
     $stmt->bindParam(4, $datos[3]);
     $stmt->bindParam(5, $datos[4]);
     $stmt->execute();
-    
+
     echo "Mofication Completed";
-    header('Refresh: 5; URL=MainPage.php'); 
+    header('Refresh: 5; URL=MainPage.php');  
 ?>
