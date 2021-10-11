@@ -1,16 +1,13 @@
 <?php
     include "Connectiondb.php";
 
-    $activa=0;
-    if (!empty(isset($_POST['activa']))) {
+    $activa = 0;
+    if (isset($_POST['activa'])) {
         $activa = 1;
     }
     else {
         $activa = 0;
     }
-
-    echo "activa = " . $activa;
-    echo gettype($activa);
 
     $datos = array($_POST['codHotel'], $_POST['numhabitacion'], $_POST['capacidad'], $_POST['preciodia'], $activa);
     $pdo = Connect_db();
@@ -24,5 +21,5 @@
     $stmt->execute();
 
     echo "Inserction Completed";
-    //header('Refresh: 5; URL=MainPage.php');
+    header('Refresh: 2; URL=MainPage.php');
 ?>

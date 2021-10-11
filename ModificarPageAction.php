@@ -2,7 +2,7 @@
     include "Connectiondb.php";
 
     $activa=0;
-    if (!empty(isset($_POST['activa']))) {
+    if (isset($_POST['activa'])) {
         $activa = 1;
     }
     else {
@@ -21,5 +21,5 @@
     $stmt->execute();
 
     echo "Mofication Completed";
-    header('Refresh: 5; URL=MainPage.php');  
+    header('Refresh: 2; URL=MainPage.php');  
 ?>
