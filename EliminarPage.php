@@ -16,7 +16,7 @@
 
         $stmt = $pdo->prepare('select * from habitaciones where codHotel=? and numHabitacion=?');
         $stmt->bindParam(1, $_POST['codHotel']);
-        $stmt->bindParam(2, $_POST['numHabitacion']);
+        $stmt->bindParam(2, $_POST['numhabitacion']);
         $stmt->execute();
 
         while ($row = $stmt->fetch()) {
@@ -24,7 +24,7 @@
                 . "<td>" . $row['codHotel'] . "</td> \n"
                 . '<input type="hidden" name="codHotel" value="' . $row['codHotel'] . '" />'
                 . "<td>" . $row['numHabitacion'] . "</td> \n"
-                . '<input type="hidden" name="numHabitacion" value="' . $row['numHabitacion'] . '" />'
+                . '<input type="hidden" name="numhabitacion" value="' . $row['numHabitacion'] . '" />'
                 . "<td>" . $row['capacidad'] . "</td> \n"
                 . "<td>" . $row['preciodia'] . "</td> \n"
                 . "<td>" . $row['activa'] . "</td> \n"
@@ -57,9 +57,9 @@
     </table>
     <form action="EliminarAction.php" method="POST">
         <input type="hidden" name="codHotel" value="<?php echo $_POST['codHotel'] ?>" />
-        <input type="hidden" name="numHabitacion" value="<?php echo $_POST['numHabitacion'] ?>" />
+        <input type="hidden" name="numhabitacion" value="<?php echo $_POST['numhabitacion'] ?>" />
         <div id="buttonMenuPrincipal">
-            <input type="button" value="Eliminar registro" />
+            <input type="submit" value="Eliminar registro" />
             <input value="Volver a la página principal" type="submit" formaction="MainPage.php"/>
         </div>
     </form>
