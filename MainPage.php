@@ -32,7 +32,8 @@
         </tbody>
     </table>
     <form action="InsertarPage.php" method="POST" >
-        <input value="Insertar nuevo registro" type="submit" />
+        <input value="Insertar nuevo registro" type="submit"/>
+        <input value="Procedimientos" type="submit" formaction="ProcedimientosPage.php"/>
     </form>
 </body>
 

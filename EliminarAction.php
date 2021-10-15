@@ -6,6 +6,11 @@
 
     $pdo = Connect_db();
 
+    $stmt = $pdo->prepare("DELETE from estancias where codHotel = ? and numhabitacion = ?");
+    $stmt->bindParam(1, $datos[0]);
+    $stmt->bindParam(2, $datos[1]);
+    $stmt->execute();
+
     $stmt = $pdo->prepare("DELETE from habitaciones where codHotel = ? and numhabitacion = ?");
     $stmt->bindParam(1, $datos[0]);
     $stmt->bindParam(2, $datos[1]);
