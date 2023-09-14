@@ -6,6 +6,15 @@ It's an school project made back when I was in a superior Cycle called Multiplat
 web app with Vanilla PHP that can do CRUD operations in an MySQL database in local
 (in my case [xampp](https://www.apachefriends.org/es/index.html)).
 
+## Index
+
+- [PHP Form](#php-form)
+  - [Index](#index)
+  - [IMPORTANT DISCLAIMER](#important-disclaimer)
+  - [What can you do with PHP-Form?](#what-can-you-do-with-php-form)
+  - [Build the project](#build-the-project)
+    - [Requirements and Build](#requirements-and-build)
+
 ## IMPORTANT DISCLAIMER
 
 This project is not built for production, it was a project that I have done several years ago, but I wanted to give it a little edge, and in the way solve some issues that
@@ -29,7 +38,7 @@ The program will be functioning around the management of the table "habitaciones
 
 If after the disclaimer you want to continue checking the project, here I have the easiest way of building this application; or at least how I have done it to have it on a local server with [xampp](https://www.apachefriends.org/es/index.html):
 
-### Requirements
+### Requirements and Build
 
 - Having [xampp](https://www.apachefriends.org/es/index.html) installed in your computer/server in which you are going to deploy the project.
 - Inside the xampp folder, locate the *htdocs* folder, because will be where we are going to put the project.
