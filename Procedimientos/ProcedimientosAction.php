@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include "Connectiondb.php";
+    include "../db/Connectiondb.php";
 
     function generateTable(array $columnNames, array $rows ) {
         $output = "<table>";
@@ -167,4 +167,4 @@
 
     $_SESSION["procedimientoOutput"] = $mainOutput;
 
-    header('Refresh: 0; URL=ProcedimientosPage.php');
+    header('Refresh: 0; URL=index.php');

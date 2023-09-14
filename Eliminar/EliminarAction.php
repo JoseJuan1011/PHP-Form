@@ -1,6 +1,5 @@
 <?php
-    
-    include "Connectiondb.php";
+    include "../db/Connectiondb.php";
 
     $datos = array($_POST['codHotel'], $_POST['numhabitacion']);
 
@@ -20,5 +19,5 @@
 
     $pdo = null;
 
-    header("refresh: 2; Url=MainPage.php");
+    header("refresh: 2; Url=../MainPage.php");
 ?>

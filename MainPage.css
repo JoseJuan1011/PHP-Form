@@ -2,9 +2,7 @@ html {
     text-align: center;
     align-content: center;
 
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #0E0E10;
 }
 
 h1 {

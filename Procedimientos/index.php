@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Table.css" />
+    <link rel="stylesheet" href="../estilosExtra/Table.css" />
     <link rel="stylesheet" href="ProcedimientosPage.css" />
     <title>Procedimientos</title>
     <?php
     session_start();
-    include "Connectiondb.php";
+    include "../db/Connectiondb.php";
     ?>
 </head>
 
@@ -76,7 +76,7 @@
                 </form>
             </article>
             <article aria-label="Form Volver al menú principal">
-                <form action="MainPage.php" method="POST">
+                <form action="../MainPage.php" method="POST">
                     <input type="submit" value="Volver al menú principal" />
                 </form>
             </article>

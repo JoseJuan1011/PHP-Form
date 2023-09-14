@@ -8,13 +8,13 @@
     <title>Insertar Registro</title>
     <link rel="stylesheet" href="InsertarPage.css"/>
     <?php
-    include "Connectiondb.php";
+    include "../db/Connectiondb.php";
     ?>
 </head>
 
 <body>
     <h1>Insertar Registro</h1>
-    <form action="MainPage.php" id="InsertarForm" method="post">
+    <form action="../MainPage.php" id="InsertarForm" method="post">
         <ul>
             <li>
                 <?php

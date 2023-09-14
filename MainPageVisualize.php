@@ -1,5 +1,5 @@
 <?php
-    include "Connectiondb.php";
+    include "./db/Connectiondb.php";
     function Visualize_Table_Habitaciones() {
         $pdo = Connect_db();
 
@@ -15,8 +15,8 @@
                 ."<td>".$row['preciodia']."</td> \n"
                 ."<td>".$row['activa']."</td> \n"
                 .'<form action="InsertarPage.php" method="post">'
-                ."<td>".'<input value="modificar" type="submit" formaction="ModificarPage.php"/>'."</td> \n"
-                ."<td>".'<input value="eliminar" type="submit" formaction="EliminarPage.php"/>'."</td> \n"
+                ."<td>".'<input value="modificar" type="submit" formaction="./Modificar/index.php"/>'."</td> \n"
+                ."<td>".'<input value="eliminar" type="submit" formaction="./Eliminar/index.php"/>'."</td> \n"
                 .'<input type="hidden" name="codHotel" value="'.$row['codHotel'].'" />'
                 .'<input type="hidden" name="numhabitacion" value="'.$row['numHabitacion'].'" />'
                 .'<input type="hidden" name="activa" value="'.$row['activa'].'" />'

@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="ModificarPage.css">
     <title>Modificar Registro</title>
     <?php
-    include "Connectiondb.php";
-    $activa = $_POST['activa'];
+    include "../db/Connectiondb.php";
+    if (isset($_POST['activa'])) {
+        $activa = $_POST['activa'];
+    }
     ?>
 </head>
 
 <body>
     <h1>Modificar Registro</h1>
-    <form action="MainPage.php" id="ModificarForm" method="post">
+    <form action="../MainPage.php" id="ModificarForm" method="post">
         <ul>
             <li>
                 codHotel <?php echo $_POST['codHotel'] ?>

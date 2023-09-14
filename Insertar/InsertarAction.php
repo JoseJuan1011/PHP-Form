@@ -1,5 +1,5 @@
 <?php
-    include "Connectiondb.php";
+    include "../db/Connectiondb.php";
 
     $activa = 0;
     if (isset($_POST['activa'])) {
@@ -21,5 +21,5 @@
     $stmt->execute();
 
     echo "Insertion Completed";
-    header('Refresh: 2; URL=MainPage.php');
+    header('Refresh: 2; URL=../MainPage.php');
 ?>

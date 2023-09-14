@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="EliminarPage.css" />
+    <link rel="stylesheet" href="../estilosExtra/Table.css" />
     <title>Eliminar Registro</title>
     <?php
     function registroAEliminar()
     {
-        include "Connectiondb.php";
+        include "../db/Connectiondb.php";
 
         $pdo = Connect_db();
 
@@ -60,7 +61,7 @@
         <input type="hidden" name="numhabitacion" value="<?php echo $_POST['numhabitacion'] ?>" />
         <div id="buttonMenuPrincipal">
             <input type="submit" value="Eliminar registro" />
-            <input value="Volver a la página principal" type="submit" formaction="MainPage.php"/>
+            <input value="Volver a la página principal" type="submit" formaction="../MainPage.php"/>
         </div>
     </form>
 </body>

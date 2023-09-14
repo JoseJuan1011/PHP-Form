@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habitaciones </title>
     <link rel="stylesheet" href="MainPage.css" />
-    <link rel="stylesheet" href="Table.css" />
+    <link rel="stylesheet" href="./estilosExtra/Table.css" />
 </head>
 
 <body>
@@ -32,9 +32,9 @@
             ?>
         </tbody>
     </table>
-    <form action="InsertarPage.php" method="POST" >
+    <form action="./Insertar/index.php" method="POST" >
         <input value="Insertar nuevo registro" type="submit"/>
-        <input value="Procedimientos" type="submit" formaction="ProcedimientosPage.php"/>
+        <input value="Procedimientos" type="submit" formaction="./Procedimientos/index.php"/>
     </form>
 </body>
 
