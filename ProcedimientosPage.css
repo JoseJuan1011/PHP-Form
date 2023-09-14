@@ -1,0 +1,19 @@
+html {
+    background-color: #0E0E10;
+
+    color: white;
+}
+
+option:empty {
+    display: none;
+}
+
+#salidaProcedimientos {
+    float: left;
+    align-content: center;
+}
+
+#forms {
+    max-width: 50%;
+    float: left;
+}

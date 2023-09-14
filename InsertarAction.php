@@ -20,6 +20,6 @@
     $stmt->bindParam(5, $datos[4]);
     $stmt->execute();
 
-    echo "Inserction Completed";
+    echo "Insertion Completed";
     header('Refresh: 2; URL=MainPage.php');
 ?>
