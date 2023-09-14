@@ -17,10 +17,10 @@ web app with Vanilla PHP that can do CRUD operations in an MySQL database in loc
 
 ## IMPORTANT DISCLAIMER
 
-This project is not built for production, it was a project that I have done several years ago, but I wanted to give it a little edge, and in the way solve some issues that
-appeared by the time I checked on the project again. And in the way show my knowledge, or expertise in PHP, even if it's not my first programming language.
+This project is not built for production, it was a project that I did several years ago, but I wanted to give it a little edge, and in a way, solve some issues that
+appeared by the time I checked on the project again. Also, the purpose of this project is to show my knowledge, or expertise in PHP, even if it's not my first programming language.
 
-Apart from that, it's important to notice the native language of the web app it's **Spanish**, so if you want to check it, take this into account.
+Apart from that, it's important to take into account the native language of the web app, which it's **Spanish**, in case you wanted to check it.
 
 ## What can you do with PHP-Form?
 
@@ -31,7 +31,7 @@ The program will be functioning around the management of the table "habitaciones
 
     1. Showing all the hotel rooms from a selected hotel.
     2. Insertion of a hotel room, but with validation and checking if the hotel passed exists.
-    3. The amount of hotel rooms that the hotel passed by parameter has, and those who have a price per day less than the one passed by parameter.
+    3. The amount of hotel rooms that the hotel has, passed by parameter, and those who have a lower price per day than the one passed by parameter.
     4. Calculate the amount of money a person has spent in their stays on hotels.
 
 ## Build the project
